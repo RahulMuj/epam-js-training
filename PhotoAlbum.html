@@ -1,0 +1,32 @@
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>JS Training Photo Album</title>
+   <link href="styles/photoalbum.css"  rel="stylesheet" type="text/css"></style>
+   <script src="js/photoalbum-script.js" defer></script>
+</head>
+<body onload="app" class="main">
+<h2>Welcome to  Photo Album</h2>
+<form id="addPhotoForm" action="javascript:void(0);" method="POST" onsubmit="app.addPhoto(this)">
+  <input type="text" class="add-name" placeholder="Add photo descrption">
+  <input type="submit" class="button span" value="Add Photos">
+</form>
+
+<div class="spoiler" role="aria-hidden">
+  <form action="javascript:void(0);" method="POST" id="saveEdit">
+    <input type="text" class="edit-name" disabled="true">
+    <input type="submit" class="button span" value="Edit Photos" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+  </form>
+</div>
+
+<p class="counter"></p>
+
+<table>
+  <tr>
+    <th>Photo Album </th>
+  </tr>
+    <tbody class="photos">
+    </tbody>
+</table>
+</body>
+</html>
