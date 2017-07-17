@@ -1,4 +1,3 @@
-var PhotoalbumStore = require('./js/photolbum-script.js');
 
 describe("PhotoAlbum Test Cases", function() {
   var dummyImage = {
