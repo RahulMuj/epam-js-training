@@ -1,3 +1,5 @@
+'use strict'
+
 var  app = new function() {
   function Photo(id, descrption, url){
           this.id = id;
@@ -19,11 +21,11 @@ var  app = new function() {
 
       /* Initialize Photo Album Store*/
       this.photoalbum = [
-            photo1 = new Photo ("Photo1.jpg", "Vehicle Image" ,"http://mydemo.com/1") ,
-            photo2 = new Photo ("Photo2.jpg", "Person Image" ,"http://mydemo.com/2") ,
-            photo3 = new Photo ("Photo3.jpg", "Mountain Image" ,"http://mydemo.com/3"),
-            photo4 = new Photo ("Photo4.jpg", "Food Image" ,"http://mydemo.com/4"),
-            photo5 = new Photo ("Photo5.jpg", "Mobile Image" ,"http://mydemo.com/5")
+            new Photo ("Photo1.jpg", "Vehicle Image" ,"http://mydemo.com/1") ,
+            new Photo ("Photo2.jpg", "Person Image" ,"http://mydemo.com/2") ,
+            new Photo ("Photo3.jpg", "Mountain Image" ,"http://mydemo.com/3"),
+            new Photo ("Photo4.jpg", "Food Image" ,"http://mydemo.com/4"),
+            new Photo ("Photo5.jpg", "Mobile Image" ,"http://mydemo.com/5")
           ];
 
       /*
